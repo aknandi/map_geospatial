@@ -1,4 +1,4 @@
-FROM rocker/verse:3.5.1
+FROM rocker/verse:3.6.0
 LABEL maintainer="anita.k.nandi@gmail.com"
 
 RUN apt-get update \
@@ -30,17 +30,10 @@ RUN apt-get update \
     git \
   && install2.r --error \
     RColorBrewer \
-    RandomFields \
-    RNetCDF \
     classInt \
-    deldir \
     gstat \
-    hdf5r \
-    lidR \
     mapdata \
     maptools \
-    mapview \
-    ncdf4 \
     proj4 \
     raster \
     rgdal \
@@ -50,8 +43,6 @@ RUN apt-get update \
     sp \
     spacetime \
     spatstat \
-    spatialreg \
-    spdep \
     geoR \
     geosphere \
     cowplot \

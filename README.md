@@ -1,9 +1,11 @@
 rocker/map_geospatial
 =============
 
+[![Build Status](https://travis-ci.org/aknandi/map_geospatial.svg)](https://travis-ci.org/aknandi/map_geospatial)
+
 Docker image for geospatial analysis in R designed for use by the Malaria Atlas Project. Built from rocker/verse (https://hub.docker.com/r/rocker/verse).
 
-Current image is using rocker v3.5.1
+Current image is using rocker v3.6.0
 
 Build package
 -------------

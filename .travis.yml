@@ -1,5 +1,12 @@
 services:
   - docker
 
-script:
-  - docker build . --build-arg git_username=$username --build-arg git_password=$password
+env:
+  global:
+    - GOOGLE_APPLICATION_CREDENTIALS=~/gcloud-service-key.json
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    on:
+      branch: master
